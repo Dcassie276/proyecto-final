@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOCUMENTO</title>
     <link rel="stylesheet" href="./Levain/styles.css">
+    <link rel="stylesheet" href="./Levain/mediaqueries.css">
 </head>
 <body>
     
 <header>
-<img src="./Levain/img/levain-logo.png" alt="Levain" class="logo">
+<img src="./Levain/img/levain-logo.png" alt="Levain" class="Logo">
 <nav class="navbar">
+
+
+
     <ul class="navbar-list">
         <li>
             <a href="#">Home</a>
@@ -25,11 +29,44 @@
         <li>
             <a href="#">Contactanos</a>
         </li>
-
-            <img src="./Levain/img/CARRITO.svg" alt="carrito" class="cart-icon">
-        
-        
+            
+        <label for="menu-toggle" class="menu-lable">
+      <img src="./Levain/img/CARRITO.svg" alt="carrito" class="cart-icon">
+        </label>
+        <input type="checkbox" id="cart-toggle">
+        <label for="menu-toggle" class="menu-lable">
+            
+            <img src="./Levain/img/menu.png" alt="icono meno" class="menu.icon">
+        </label>
+        <input type="checkbox" id="cart-toggle">
     </ul>
+
+    <div class="cart">
+        <h2>Tus PANES</h2>
+        <div class="cart-item">
+          <img src="./Levain/img/profile.png" alt="un producto" />
+          <div class="item-info">
+            <h3 class="item-title">CIABATTA</h3>
+            <p class="item-bid">Current Bid</p>
+            <span class="item-price">$00</span>
+          </div>
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+        </div>
+
+        <span class="divider"></span>
+
+        <div class="cart-total">
+          <p>Total:</p>
+          <span>$000</span>
+        </div>
+        <button class="btn-add">Comprar</button>
+      </div>
+      <div class="overlay"></div>
+
 </nav>
 </header>
 
@@ -133,7 +170,7 @@
 </main>
  
 
-<footer id="info_footer">
+<footer id="footer-nav">
  <ul class="footer">
       <li><a href="#" class="footer_link">Términos de Uso</a></li>
       <li><a href="#" class="footer_link">Trabajá con Nosotros</a></li>
