@@ -1,9 +1,17 @@
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Playfair+Display:ital,wght@1,500&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Merienda:wght@700&family=Playfair+Display:ital,wght@1,500&display=swap');
+
+
 :root {
-    --background: #fcf5a6c2;
+    --background: #DEB841;
     --primary: #313131;
     --secondary: #fcfcfc;
-    --btn-bg: 
-    #050d2641;
+    --tertiary: #DE9E36;
+    --btn-bg:#050d2641;
     --bg-azul-10: #e9eeff;
     --bg-white: #fff;
     --bg-electric: #fdfcfc;
@@ -20,6 +28,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
     text-decoration: none;
     list-style: none;
 
@@ -39,9 +48,13 @@ header{
 
 }
 
-.logo{
-    
-    height: 180%;
+.Logo{
+     height: 180%;
+}
+
+.hero_botton{
+display: flex;
+justify-content: space-between;
 }
 
 .navbar, .navbar-list{
@@ -74,8 +87,8 @@ header{
 }
 
  main{
-    background: var(--background);
-    display: flex;
+    background-color: #FBAB7E;
+    background: linear-gradient(52deg, #FBAB7E 0%, #F7CE68 100%);
     flex-direction:column;
     align-items: center;
     justify-content: center;
@@ -121,6 +134,9 @@ header{
     
   width: 1800px;
   height: 400px;
+  background: var(--secondary);
+  padding: 15PX;
+  border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -139,11 +155,128 @@ header{
     font-weight: 800;
     color: var(--text-center);
  }
- 
-.hero-card p > span {
+
+.hero-info p > span {
     font-weight: 800;
 }
+.hero-info a{
+    color: var(--text-center);
+    background-color: #FA709A;
+    width: 220px;
+    padding: 8px 8px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+
+}
+.hero-card-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.hero-card-top h3{
+    font-weight: 600;
+    font-size: 36px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+ }
+
+.pic1{
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    object-position: center;
+}
+.pic{
+    width: 220px;
+    height: 200px;
+    object-position: center;
+}
+
+#info{
+    padding: 70px 0px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    gap: 80px;
+
+}
+
+#info h2{
+    font-size: 32px;
+    font-weight: 400;
+
+}
+
+#info2 { 
+    padding: 70px 0px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    gap: 80px;
+}
+
+#info2 h2{
+    font-size: 20px;
+    font-weight: 200;
+
+}
+.madre-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.madre_card{
+    width: max-content;
+    height: max-content;
+    padding: 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--secondary);
+    border-radius: 10px;
+    gap: 40px;
+
+}
+
+.madre-info2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.madre_card2{
+    width: 300px;
+    height: 500px;
+    padding: 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--secondary);
+    border-radius: 10px;
+    gap: 40px;}
+
+footer {
+    
+    background: linear-gradient( #888787,#424242);
+
+    
+}
+   
 
 
 
- 
